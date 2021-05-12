@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface RemoteService {
 
     /**
-     * 调用服务B的hello方法
+     * 远程调用服务B的hello方法
      *
      * @return
      */

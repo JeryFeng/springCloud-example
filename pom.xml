@@ -10,11 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-cloud-example-config</module>
-        <module>spring-cloud-example-registry</module>
         <module>spring-cloud-example-biz-a</module>
         <module>spring-cloud-example-gateway</module>
         <module>spring-cloud-example-biz-b</module>
-        <module>spring-cloud-example-regist</module>
         <module>spring-cloud-example-register</module>
     </modules>
 
@@ -36,7 +34,7 @@
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
     </properties>
 
-
+    <!-- 顶层pom 用于管理整个项目中的 springboot相关jar的版本，dependencyManagement中的依赖不会被继承，子项目需要自己再引入，但是不需要写版本号 -->
     <dependencyManagement>
         <dependencies>
             <dependency>
